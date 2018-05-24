@@ -40,10 +40,36 @@ for p in palabras:
 
 ### otro for
 for a in palabras[:]:
-    if len(p) > 6:
-        palabras.insert(0,6)
+    if len(a) > 6:
+        palabras.insert(0,a)
+        print(palabras)
 
-palabras
+
+print("el # de palabras es: ",len(a),"\n")
+
+##funcion integrada range
+print("funcion range")
+for p in range(6):
+    print(p)
+
+print("---.---")
+##range # inicial y final y de cuanto en cuanto salta "3"
+for i in range(2,7,3):
+    print(i)
+
+###raiz cuadrada
+print("\nraiz cuadrada")
+lista = []
+for num in range(1,11):
+    listas = num ** 2
+    lista.append(listas)
+
+print(lista)
+
+
+
+
+    
 
 
 
