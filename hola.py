@@ -66,6 +66,35 @@ for num in range(1,11):
 
 print(lista)
 
+##iterar indices de una secuencia
+print("otro ejemplo")
+mnombre = ['julio','cesar','corpus','mechato']
+for pe in range(len(mnombre)):
+    print(pe,mnombre[pe])
+
+##funcion list
+print("funcion list")
+print(list(range(5)))
+
+##numeros primos
+print("numeros primos")
+for nn in range(2, 10):
+    for xx in range(2, nn):
+        if nn % xx ==0:
+            print(nn, 'es igual a', xx, 'X',nn/xx)
+            break
+    else:
+        print(nn, 'es un numero primo')
+
+##numero par        
+print("numero par")
+for nume in range(1,10):
+    if nume % 2 == 0:
+        print("encontre un # par", nume)
+        continue
+    print("encontre un numero",nume)
+
+
 
 
 
