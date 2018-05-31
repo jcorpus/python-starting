@@ -86,13 +86,23 @@ for nn in range(2, 10):
     else:
         print(nn, 'es un numero primo')
 
-##numero par        
+##numero par  
+print("numero pra")      
+"""
 print("numero par")
 for nume in range(1,10):
     if nume % 2 == 0:
         print("encontre un # par", nume)
         continue
     print("encontre un numero",nume)
+"""
+for numero in range(3,30):
+    if numero % 2 ==0:
+        print("el #: ", numero, "es PAR")
+        continue
+    print("encontre un numero", numero)
+
+        
 
 
 
