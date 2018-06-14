@@ -87,7 +87,7 @@ for nn in range(2, 10):
         print(nn, 'es un numero primo')
 
 ##numero par  
-print("numero pra")      
+print("numero prar")      
 """
 print("numero par")
 for nume in range(1,10):
@@ -101,6 +101,61 @@ for numero in range(3,30):
         print("el #: ", numero, "es PAR")
         continue
     print("encontre un numero", numero)
+
+print("serie fibonacci")
+
+####serie fibonacci
+def serie_fibonacci(nu):
+    "escribe la serie de fibonacci hasta n."
+    a,b = 0,1
+    while a < nu:
+            print(a,end=',')
+            ##print(a,end=','+"\n")
+            a,b = b, a+b
+    print()
+
+serie_fibonacci(2000)
+print(serie_fibonacci)
+print(serie_fibonacci(0))
+####serie fibonacci
+###Retornar numeros serie fibonacci
+print("otra serie fibonacci")
+def fib2(nnn):
+    "devuelve una lista conteniendo la serie fibonacci hasta"
+    result = []
+    a, b = 0, 1
+    while a < nnn:
+        result.append(a)
+        a, b = b, a+b
+    return result
+
+f100 = fib2(100)
+print(f100)
+
+###otra cosilla
+def pedir_confirmacion(prompt, reitentos=4, queja='si o no, por favor'):
+    while True:
+        ok = input(prompt)
+        if  ok in ('s','S','si','Si','SI'):
+            return True
+        if ok in ('n','no','No','NO'):
+            return False
+        reintentos = reitentos - 1
+        if reintentos < 0:
+            raise OSError('usuario duro')
+        print(queja)
+
+
+pedir_confirmacion('realmente quiere salir?')
+##pedir_confirmacion('sdfgdf', 2)
+
+        ##pagina 29
+
+        
+
+
+
+
 
         
 
